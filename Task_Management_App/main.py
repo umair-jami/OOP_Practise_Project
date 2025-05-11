@@ -146,6 +146,11 @@ def main():
                     if st.button("Delete", key=f"delete_{task.id}"):
                         task_manager.delete_task(task.id)
                         st.rerun()
+                        
+    st.markdown("""
+---
+<p style="text-align: center;">Made with ❤️ by Umair_Jami</p>
+""", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
